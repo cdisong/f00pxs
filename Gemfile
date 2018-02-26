@@ -47,10 +47,11 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'annotate'
-  gem 'better-errors'
+  gem 'better_errors'
   gem 'binding_of_caller'
   gem 'byebug' 
   gem 'pry-rails'
+  gem 'bcrypt'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
