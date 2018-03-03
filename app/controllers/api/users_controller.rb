@@ -1,8 +1,10 @@
 class Api::UsersController < ApplicationController
   def index
+    @users = User.all 
   end
 
-  def show
+  def show 
+    @user = User.find_by(id_name: params[:param])
   end
 
   def create
@@ -19,4 +21,9 @@ class Api::UsersController < ApplicationController
 
   def edit
   end
+
+  private 
+  def user_param()
+    
+  end 
 end
